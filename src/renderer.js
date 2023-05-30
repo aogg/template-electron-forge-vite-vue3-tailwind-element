@@ -27,5 +27,18 @@
  */
 
 import './index.css';
+import '../tailwind.css';
+
+import  { createApp } from "vue";
+import App from "./components/App/App.vue";
+
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
 
 console.log('👋 This message is being logged by "renderer.js", included via Vite');
+
+createApp(App)
+    .use(ElementPlus)
+
+    .mount('#app')
